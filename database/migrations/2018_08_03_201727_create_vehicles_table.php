@@ -15,7 +15,7 @@ class CreateVehiclesTable extends Migration
     {
         Schema::create('vehicles', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('model_id')->index();
+            $table->unsignedInteger('vehiclemodel_id')->index();
             $table->unsignedInteger('manufacturer_id')->index();
             $table->enum('type', ['electric', 'hybrid', 'diesel', 'petrol']);
             $table->enum('usage', ['personal', 'business']);

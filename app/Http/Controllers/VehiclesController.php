@@ -22,7 +22,7 @@ class VehiclesController extends Controller
         $data['vehicles'] = $vehicles;
 
         /*foreach ($vehicles as $vehicle) {
-            $data['vehicles'][] = ['model_id' => $vehicle->model_id,
+            $data['vehicles'][] = ['vehiclemodel_id' => $vehicle->vehiclemodel_id,
                         'manufacturer_id' => $vehicle->manufacturer_id,
                         'type' => $vehicle->type,
                         'usage' => $vehicle->usage,

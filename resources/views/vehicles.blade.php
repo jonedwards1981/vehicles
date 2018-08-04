@@ -17,7 +17,7 @@
                 <div class="title m-b-md">
                     <table border="1">
                         <tr>
-                            <th>model_id</th>
+                            <th>vehiclemodel</th>
                             <th>manufacturer</th>
                             <th>type</th>
                             <th>usage</th>
@@ -41,7 +41,7 @@
                         </tr>
                     @foreach ($vehicles as $vehicle)
                         <tr>
-                            <td>{{$vehicle->model_id}}</td>
+                            <td>{{$vehicle->vehiclemodel->vehiclemodel}}</td>
                             <td>{{$vehicle->manufacturer->manufacturer}}</td>
                             <td>{{$vehicle->type}}</td>
                             <td>{{$vehicle->usage}}</td>

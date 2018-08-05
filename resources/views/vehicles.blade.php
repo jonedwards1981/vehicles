@@ -37,17 +37,47 @@
                     <td>{{$vehicle->license_plate}}</td>
                     <td>{{$vehicle->weight_category}}</td>
                     <td>{{$vehicle->no_seats}}</td>
-                    <td>{{$vehicle->has_boot}}</td>
-                    <td>{{$vehicle->has_trailer}}</td>
+                    <td>
+                        @if ($vehicle->has_boot == 1)
+                            Yes
+                        @else 
+                            No
+                        @endif
+                    </td>
+                    <td>
+                        @if ($vehicle->has_trailer == 1)
+                            Yes
+                        @else 
+                            No
+                        @endif
+                    </td>
                     <td>{{$vehicle->owner->name}}</td>
                     <td>{{$vehicle->owner->company}}</td>
                     <td>{{$vehicle->owner->profession}}</td>
                     <td>{{$vehicle->transmission}}</td>
                     <td>{{$vehicle->colour->colour}}</td>
-                    <td>{{$vehicle->is_hgv}}</td>
+                    <td>
+                        @if ($vehicle->is_hgv == 1)
+                            Yes
+                        @else 
+                            No
+                        @endif
+                    </td>
                     <td>{{$vehicle->no_doors}}</td>
-                    <td>{{$vehicle->sunroof}}</td>
-                    <td>{{$vehicle->has_gps}}</td>
+                    <td>
+                        @if ($vehicle->sunroof == 1)
+                            Yes
+                        @else 
+                            No
+                        @endif
+                    </td>
+                    <td>
+                        @if ($vehicle->has_gps == 1)
+                            Yes
+                        @else 
+                            No
+                        @endif
+                    </td>
                     <td>{{$vehicle->no_wheels}}</td>
                     <td>{{$vehicle->engine_cc}}</td>
                     <td>{{$vehicle->fuel_type}}</td>

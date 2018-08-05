@@ -7,6 +7,17 @@ use App\Http\Controllers\Controller;
 
 class VehiclesController extends Controller
 {
+    
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     /**
      * Show the vehicles stored in the database.
      *

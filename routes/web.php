@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/vehicles', 'VehiclesController@index');
+Route::get('/passport', 'VehiclesController@passport')->name('passport');;
 
 Auth::routes();
 Route::get('/logout', 'Auth\LoginController@logout');

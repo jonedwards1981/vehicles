@@ -34,4 +34,9 @@ class VehiclesController extends Controller
         
         return view('vehicles', $data);
     }
+    
+    public function passport()
+    {
+        return view('passport');
+    }
 }

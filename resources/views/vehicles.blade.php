@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-left">
         <div class="col-md-12">
-            <table border="1">
+            <table class="table-responsive table-bordered table-striped table-hover thead-dark">
                 <tr>
                     <th>vehiclemodel</th>
                     <th>manufacturer</th>
